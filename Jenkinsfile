@@ -21,14 +21,14 @@ pipeline {
             steps {
                 
                     // Print output of .cpp file using a shell script
-                    sh './output'
+                    sh './a.out'
                 
             }
         }
         
         stage('Deploy') {
             steps {
-                  echo 'deploy'
+                  echo 'deployment'
                 // Add your deployment steps here
             }
         }
