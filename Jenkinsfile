@@ -6,8 +6,9 @@ pipeline {
             steps {
                 
                     // Compile the .cpp file using a shell script
-                    sh 'g++ hello.cpp '
-                    echo 'Build Stage Succesful'
+                    build 'PES2UG21CS004-1'
+                    sh 'g++ main.cpp -o output'
+                  
             }
             }
 
