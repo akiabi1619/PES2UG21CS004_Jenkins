@@ -2,15 +2,15 @@ pipeline {
     agent any
     
     stages {
-        stage('Buil') {
+        stage('Build') {
 
             
             steps {
                 
                     // Compile the .cpp file using a shell script
                    // build 'PES2UG21CS004-1'
-                    sh 'g++ ./main/hello.cpp'
-                    echo 'build successful'
+                   // sh 'g++ ./main/hello.cpp'
+                   // echo 'build successful'
                   
             }
             }
