@@ -20,7 +20,7 @@ pipeline {
             steps {
                 
                     // Print output of .cpp file using a shell script
-                    sh './output_file'
+                    sh './output'
                 
             }
         }
@@ -34,10 +34,10 @@ pipeline {
     }
     
     
-      post
-      {
+      post{
         failure {
             echo 'Pipeline failed'
+        
         }
       }
 }
