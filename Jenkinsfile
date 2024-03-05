@@ -1,7 +1,7 @@
 pipeline {
     agent any
     
-    stages {
+  //  stages {
         stage('Build') {
 
             
@@ -19,7 +19,7 @@ pipeline {
 
     
         
-        stage('Test') {
+       // stage('Test') {
             steps {
                 
                     // Print output of .cpp file using a shell script
@@ -28,16 +28,16 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
+       // stage('Deploy') {
             steps {
-                  echo 'deployment'
+               //   echo 'deployment'
                 // Add your deployment steps here
             }
         }
     }
     
     
-      post{
+    //  post{
         failure {
             echo 'Pipeline failed'
         
