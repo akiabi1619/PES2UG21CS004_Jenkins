@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') {
+        stage('Buil') {
 
-            llll
+            
             steps {
                 
                     // Compile the .cpp file using a shell script
